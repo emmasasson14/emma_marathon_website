@@ -9,6 +9,7 @@
     <script src="script.js"></script>
 </head>
 <body>
+    <!-- NAV BAR-->
     <nav>
         <ul>
         <li class="line"><a href="index.html">Home</a></li>
@@ -16,17 +17,24 @@
         <li class="line"><a href="donate.html">Donate</a></li>
         <li class="solo"><a href="gallery.html">Gallery</a></li>
         </ul>
-</nav>
+   </nav>
 
+    <!-- HEADER-->
 <h1>Emma's 2023 NYC Marathon Journey </h1>
+    <!-- TIMER -->
 <p class= "timer" id="demo"><span id="timeline">Time</span> until I run!</p>
-
+    <!--WEATHER from https://weatherwidget.io/-->
+<a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/?unit=us" data-label_1="NEW YORK CITY" data-label_2="WEATHER" data-theme="original" >NEW YORK CITY WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+   <!-- Background IMG-->
 <section class="main">
      <img src="images/new-york-gd3191bd5d_1920.jpg" class="nyc" alt="NYC"></banner>
      <p><em>Image by <a href="https://pixabay.com/users/leonhard_niederwimmer-1131094/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4352072">Leonhard Niederwimmer</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4352072">Pixabay</a></em> </p>
 
     <p> Going to run in <span id="days"> a certain amount of</span> days! </p>
-
+<!--STRAVA WIDGET-->
     <iframe height='454' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/48679228/latest-rides/faab105a3d56966572c46b00408c7bfed4e256ae'></iframe>
 </section>
 
