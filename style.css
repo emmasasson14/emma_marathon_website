@@ -20,13 +20,13 @@ nav{
 }
 nav ul{
     list-style-type: none;
-    text-align:end;
+    text-align: right;
     color: lightgray;
 }
 
 nav li{
     display:inline-block;
-    padding: 1rem;
+    padding: 0.5rem;
     text-decoration:none;
     font-size: 20px;
     color: lightgrey;
@@ -132,24 +132,13 @@ footer ul{
  
  .mainbtm{
     display: flex;
+    background-color: black;
  }
  /*blogstyling*/
  .blogs{
-     margin: 2rem 6rem;
+     margin: 2rem 2rem;
  }
  
- .img1, .img2{
-     float: left;
-     border-radius: 1rem;
-     margin-right: .5rem;
-     margin-left: .5rem;
- }
- 
- .img1, .img2::after {
-     content: "";
-     display: table;
-     clear: both;
-   }
  .img1{
      float: right;
      border-radius: 1rem;
@@ -162,7 +151,12 @@ footer ul{
      display: table;
      clear: both;
  }
-
+ .img2{
+    float: left;
+    border-radius: 1rem;
+    margin-right: .5rem;
+    margin-left: 0rem;
+}
  .img2::after{
     content: "";
     display: table;
@@ -188,6 +182,12 @@ footer ul{
    .wrapper {
      width: 50%;
      margin: 0 auto;
+   }
+
+
+   .posted {
+    margin-bottom: 0.4rem;
+    margin-top: 0.1rem;
    }
  
    /*Donation Page*/
@@ -255,16 +255,16 @@ footer ul{
  
    @media (max-width: 800px){
      #gallery {
-         -moz-column-count: 2;
-         -webkit-column-count: 2;
-         column-count: 2;
+         -moz-column-count: 3;
+         -webkit-column-count: 3;
+         column-count: 3;
      }
    }
  
    @media (max-width: 400px){
      #gallery {
-         -moz-column-count: 1;
-         -webkit-column-count: 1;
-         column-count: 1;
+         -moz-column-count: 3;
+         -webkit-column-count: 3;
+         column-count: 3;
      }
    }
