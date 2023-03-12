@@ -139,6 +139,17 @@ footer ul{
      margin: 2rem 2rem;
  }
  
+ #vid{
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    height: 320px;
+    width: 640px;
+ }
+
+ .video{ 
+    position: relative;
+}
  .img1{
      float: right;
      border-radius: 1rem;
