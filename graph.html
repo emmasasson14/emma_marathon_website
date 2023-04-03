@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Running Mileage Progress</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emma Runs a Marathon</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<style>
+      h1 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: black;
+      }
+  body {
+    background-color: #D3D3D3
+;
+  }
+</style>
+<body>    <!-- NAV BAR-->
+    <nav>
+        <ul>
+        <li class="line"><a href="index.html">Home</a></li>
+        <li class="line"><a href="blog.html">Blog</a></li>
+        <li class="line"><a href="graph.html">Progress</a></li>
+        <li class="line"><a href="donate.html">Donate</a></li>
+        <li class="solo"><a href="gallery.html">Gallery</a></li>
+        </ul>
+   </nav>
+    <h1>Running Mileage Progress</h1>
+    <canvas id="mileageChart"></canvas>
+    <script>
+        var ctx = document.getElementById('mileageChart').getContext('2d');
+        var mileageChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7', 'Week 8', 'Week 9', 'Week 10', 'Week 11', 'Week 12', 'Week 13', 'Week 14'],
+                datasets: [{
+                    label: 'Mileage Progress',
+                    data: [5.67, 6.87, 6.99, 8.55, 7.23, 3.44, 4.5, 8.28, 8.34, 7.46, 7.03, 7.01],
+                    backgroundColor: 'rgba(108, 122, 137);, 1)',
+                    borderColor: '#FF6700',
+                    borderWidth: 3
+                }]
+            },
+            options: {
+        scales: {
+            y: {
+                beginAtZero: true,
+                grid: {
+                    color: '#999999' // set the grid color to a light gray color with some transparency
+                }
+            },
+            x: {
+                grid: {
+                    color: '#999999'
+                }
+            }
+        }, 
+        animation: {
+              duration: 2000,
+              easing: 'easeInOutQuad'
+          }
+    }
+});
+
+    </script>
+</body>
+</html>
